@@ -6,7 +6,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // Node event listeners go here
     },
-    baseUrl: "http://localhost:3001",
+    baseUrl: "https://mern-x-exit-ed5brid7o-milan-patels-projects-a7fb399e.vercel.app",
     specPattern: "cypress/integration/**/*.spec.js",
     video: false, // disable video recording if not needed
   },

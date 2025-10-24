@@ -6,19 +6,19 @@ export default function HrDashboard() {
   const [resignations, setResignations] = useState([]);
 
   const fetchData = async () => {
-    const res = await axios.get("http://localhost:3001/api/resignations");
+    const res = await axios.get("https://mern-x-exit-ed5brid7o-milan-patels-projects-a7fb399e.vercel.app/api/resignations");
     setResignations(res.data);
   };
 
   useEffect(() => { fetchData(); }, []);
 
   const handleApprove = async (id) => {
-    await axios.post(`http://localhost:3001/api/resignations/${id}/approve`);
+    await axios.post(`https://mern-x-exit-ed5brid7o-milan-patels-projects-a7fb399e.vercel.app/api/resignations/${id}/approve`);
     fetchData();
   };
 
   const handleReject = async (id) => {
-    await axios.post(`http://localhost:3001/api/resignations/${id}/reject`);
+    await axios.post(`https://mern-x-exit-ed5brid7o-milan-patels-projects-a7fb399e.vercel.app/api/resignations/${id}/reject`);
     fetchData();
   };
 

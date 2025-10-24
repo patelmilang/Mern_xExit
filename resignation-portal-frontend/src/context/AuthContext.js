@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      const res = await fetch("http://localhost:3001/api/auth/login", {
+      const res = await fetch("https://mern-x-exit-ed5brid7o-milan-patels-projects-a7fb399e.vercel.app/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),

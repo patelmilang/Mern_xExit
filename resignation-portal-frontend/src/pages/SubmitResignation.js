@@ -9,7 +9,7 @@ export default function SubmitResignation() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:3001/api/resignations", form);
+    await axios.post("https://mern-x-exit-ed5brid7o-milan-patels-projects-a7fb399e.vercel.app/api/resignations", form);
     alert("Resignation submitted successfully!");
   };
 
